@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AG Calc - Calculadora Flex</title>
+    <title>Etanol ou Gasolina</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <center>
-    
+   
+<div class="container">
+
     <div class="text1">
         <h3>Etanol ou Gasolina?</h3>
         <p>
@@ -16,23 +17,30 @@
         </p>
     </div>
 
-    <div class="title">
+    <div class="titleApp">
         <h2>CALCULADORA FLEX</h2>
     </div>
 
-        <img src="neutro.png" alt="Calculadora Flex" id="status">
+    <img src="neutro.png" alt="Calculadora Flex" id="status">
 
-    <div class="fields">
-        <form action="" name="frmFlex">
-            <input type="text" placeholder="Etanol" size="8" name="txtEtanol" id="fieldEtan">
-            <input type="text" placeholder="Gasolina" size="8" name="txtGasolina" id="fieldGaso">
-    </div>
-            <input type="button" id="btCalc" value="CALCULA VANTAGEM" onclick='calcular()'> <br>
+    <form action="" name="frmFlex">
+
+        <div class="prices">
+            <div class="fieldPrice">
+                <input type="text" placeholder="$ Etanol" size="8" name="txtEtanol" id="fieldEtan">
+                <input type="text" placeholder="$ Gasolina" size="8" name="txtGasolina" id="fieldGaso">
+            </div>
+            <div>
+                <input type="button" id="btCalc" value="CALCULA VANTAGEM" onclick='calcular()'> <br>
+            </div>
+        </div>
+        <div class="btReset">
             <input type="reset" id="btReset" value="REFAZER" onclick="resetar()">
-        </form>
+        </div>
+
+    </form>
         
     <script src="calcflex.js"></script>
-        
-    </center>
+
 </body>
 </html>
