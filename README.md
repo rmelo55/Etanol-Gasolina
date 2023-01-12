@@ -1,4 +1,4 @@
 # Etanol-Gasolina
 Calculadora Flex (Etanol x Gasolina) 
 
-Informa qual combustível comprar, baseado no valor informado.
+Calcula e informa qual combustível sai mais barato, baseado no preço informado.
