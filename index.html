@@ -9,38 +9,43 @@
 <body>
    
 <div class="container">
+    <div class="app">
 
-    <div class="text1">
-        <h3>Etanol ou Gasolina?</h3>
-        <p>
-            Coloque o preço de cada um <br>e calcule a vantagem:  
-        </p>
-    </div>
-
-    <div class="titleApp">
-        <h2>CALCULADORA FLEX</h2>
-    </div>
-
-    <img src="neutro.png" alt="Calculadora Flex" id="status">
-
-    <form action="" name="frmFlex">
-
-        <div class="prices">
-            <div class="fieldPrice">
-                <input type="text" placeholder="$ Etanol" size="8" name="txtEtanol" id="fieldEtan">
-                <input type="text" placeholder="$ Gasolina" size="8" name="txtGasolina" id="fieldGaso">
-            </div>
-            <div>
-                <input type="button" id="btCalc" value="CALCULA VANTAGEM" onclick='calcular()'> <br>
-            </div>
+        <div class="options">
+            
+            <div class="option1">Etanol</div> 
+            <div class="option2">Gasolina</div>
+            
         </div>
-        <div class="btReset">
-            <input type="reset" id="btReset" value="REFAZER" onclick="resetar()">
-        </div>
-
-    </form>
         
-    <script src="calcflex.js"></script>
+        <p>Qual melhor vantagem?</p>
+        
+        <div class="txtBox">
+            Digite o valor e calcule:
+        </div>
 
+        
+        <form action="" name="frmFlex">
+            
+            <div class="prices">
+                <div class="fieldPrice">
+                    <input type="text" placeholder="$ etanol" size="8" name="txtEtanol" id="fieldEtan">
+                    <input type="text" placeholder="$ gasolina" size="8" name="txtGasolina" id="fieldGaso">
+                </div>
+                <div>
+                    <input type="button" id="btCalc" value="CALCULA VANTAGEM" onclick='calcular()'> <br>
+                </div>
+                <img src="neutro.png" alt="Calculadora Flex" id="status">
+            </div>
+            <div class="btReset">
+                <input type="reset" id="btReset" value="REFAZER" onclick="resetar()">
+            </div>
+            
+        </form>
+        
+        <script src="calcflex.js"></script>
+        
+    </div>
+</div>
 </body>
 </html>
